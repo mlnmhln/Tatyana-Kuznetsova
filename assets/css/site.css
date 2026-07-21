@@ -81,7 +81,8 @@ h1 { max-width: 770px; margin-bottom: 26px; font-size: clamp(calc(3rem - 4px), c
 .recognition { background: var(--surface); text-align: center; }
 .problem-grid { display: grid; grid-template-columns: 1fr; gap: 10px; width: min(100%, 860px); margin: 0 auto; }
 .problem-grid article { position: relative; min-height: 0; overflow: hidden; padding: 20px 22px; border: 1px solid var(--line); border-radius: var(--radius); background: white; text-align: left; box-shadow: var(--card-shadow); }
-.problem-grid p { margin: 0; color: var(--navy); font-size: 1.12rem; font-weight: 650; line-height: 1.42; text-align: left; text-wrap: pretty; }
+.problem-grid p { position: relative; margin: 0; padding-left: 23px; color: var(--navy); font-size: 1.12rem; font-weight: 650; line-height: 1.42; text-align: left; text-wrap: pretty; }
+.problem-grid p::before { content: ""; position: absolute; top: .71em; left: 0; width: 7px; height: 7px; border-radius: 50%; background: var(--red); transform: translateY(-50%); }
 .recognition-conclusion { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; margin-top: 46px; padding: 38px 42px; border-radius: var(--radius); color: white; background: var(--navy); box-shadow: var(--card-shadow); }
 .recognition-conclusion p { max-width: 760px; margin: 0 auto; color: white; font-size: 1.25rem; font-weight: 650; }
 .recognition-conclusion p span { display: block; }
