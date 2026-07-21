@@ -1,0 +1,73 @@
+html.typography-preview {
+  --type-label: 11px;
+  --type-small: 14px;
+  --type-body: 16px;
+  --type-lead: clamp(17px, 1.35vw, 20px);
+  --type-card-title: clamp(20px, 1.75vw, 24px);
+  --type-section: clamp(36px, 3.25vw, 50px);
+  --type-display: clamp(48px, 4.7vw, 72px);
+}
+
+.typography-preview body { font-size: var(--type-body); line-height: 1.55; }
+.typography-preview .eyebrow { font-size: var(--type-label); line-height: 1.35; }
+.typography-preview h1 { font-size: var(--type-display); line-height: 1.04; }
+.typography-preview .section-heading h2,
+.typography-preview .about-heading h2,
+.typography-preview .application-copy h2 { font-size: var(--type-section); line-height: 1.1; }
+
+.typography-preview .hero-lead,
+.typography-preview .recognition-lead,
+.typography-preview .diagnostics-intro,
+.typography-preview .about-lead,
+.typography-preview .outcome > p { font-size: var(--type-lead); line-height: 1.5; }
+
+.typography-preview .problem-grid p { font-size: 18px; line-height: 1.45; }
+.typography-preview .recognition-conclusion p { font-size: var(--type-lead); line-height: 1.5; }
+
+.typography-preview .process-intro h3 { font-size: var(--type-section); line-height: 1.1; }
+.typography-preview .process-steps li > span { font-size: var(--type-small); }
+.typography-preview .process-steps strong { font-size: 18px; line-height: 1.3; }
+.typography-preview .process-steps p { font-size: 15px; line-height: 1.55; }
+
+.typography-preview .facts strong { font-size: var(--type-card-title); }
+.typography-preview .facts p { font-size: var(--type-small); line-height: 1.5; }
+
+.typography-preview .result-list strong { font-size: var(--type-card-title); line-height: 1.25; }
+.typography-preview .result-list p { font-size: 15px; line-height: 1.55; }
+.typography-preview .support-card h3 { font-size: clamp(30px, 2.4vw, 38px); line-height: 1.12; }
+.typography-preview .support-card > p:not(.eyebrow) { font-size: var(--type-body); line-height: 1.55; }
+.typography-preview .outcome-card { font-size: clamp(28px, 2.2vw, 36px); line-height: 1.15; }
+
+.typography-preview .application-card h3 { font-size: clamp(26px, 2vw, 32px); line-height: 1.15; }
+.typography-preview .button,
+.typography-preview .secondary-link,
+.typography-preview .header-cta { font-size: var(--type-body); }
+
+.typography-preview .brand-copy strong { font-size: 16px; }
+.typography-preview .brand-copy small { font-size: 10px; }
+.typography-preview .site-nav a,
+.typography-preview .footer-nav a,
+.typography-preview .footer-meta a { font-size: 13px; }
+.typography-preview .site-footer p { font-size: 13px; line-height: 1.55; }
+
+.typography-preview .dialog-panel h2 { font-size: clamp(36px, 4vw, 48px); }
+.typography-preview .field label,
+.typography-preview .field-error,
+.typography-preview .consent,
+.typography-preview .form-status { font-size: 12px; }
+.typography-preview .field select,
+.typography-preview .field input { font-size: var(--type-body); }
+
+@media (max-width: 780px) {
+  html.typography-preview {
+    --type-lead: 17px;
+    --type-card-title: 21px;
+    --type-section: clamp(32px, 9vw, 38px);
+    --type-display: clamp(40px, 11vw, 48px);
+  }
+
+  .typography-preview .process-intro h3 { font-size: 32px; }
+  .typography-preview .support-card h3 { font-size: 28px; }
+  .typography-preview .application-card h3 { font-size: 26px; }
+  .typography-preview .outcome-card { font-size: 30px; }
+}
